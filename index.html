@@ -1,0 +1,1595 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Sustentación ProvEEndo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/simple.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        .reveal { font-family: 'Inter', sans-serif; font-size: 34px; color: #333333; }
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4 { font-family: 'Montserrat', sans-serif; text-transform: none; font-weight: 800; color: #1a1a1a; letter-spacing: -1px; }
+        .sena-green { color: #39A900 !important; }
+        .highlight { color: #FF6A13 !important; font-weight: 700; }
+        .financial-numbers { font-size: 1.1em; color: #222; background: #f8f9fa; padding: 25px; border-radius: 12px; display: inline-block; margin-top: 20px; border-left: 10px solid #39A900; box-shadow: 0 10px 15px rgba(0,0,0,0.05); text-align: left; }
+        .financial-numbers ul { list-style-type: none; margin: 0; padding: 0; }
+        .financial-numbers li { margin-bottom: 15px; border-bottom: 1px solid #e0e0e0; padding-bottom: 5px;}
+        .financial-numbers li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0;}
+        .reveal ul { margin-top: 20px; line-height: 1.4; }
+        .reveal li { margin-bottom: 18px; }
+        .sena-header { position: absolute; top: 20px; left: 50%; transform: translateX(-50%); width: 90%; z-index: 1000; display: flex; justify-content: center; }
+        .sena-header img { height: 65px; border: none; box-shadow: none; background: transparent; }
+        .canvas-grid { display: grid; grid-template-columns: 20% 20% 20% 20% 20%; grid-template-rows: auto auto auto; gap: 10px; font-size: 0.38em; text-align: left; margin-top: 20px; }
+        .canvas-box { background: #f8f9fa; padding: 12px; border-radius: 8px; border-top: 5px solid #39A900; box-shadow: 0 4px 6px rgba(0,0,0,0.05); line-height: 1.3; }
+        .canvas-title { font-weight: 800; color: #FF6A13; margin-bottom: 8px; text-transform: uppercase; font-size: 1.1em; font-family: 'Montserrat', sans-serif; }
+        .box-title { text-align: center; font-weight: bold; margin-bottom: 15px; font-size: 1.1em; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="sena-header"><img src="sena_banner.png" alt="SENA Banner"></div>
+        <div class="slides">
+
+            <section>
+                <br><br>
+                <h1 style="font-size: 2.8em; margin-bottom: 0; margin-top: 0;"><span class="sena-green">Prov</span>EEndo</h1>
+                <h3 style="color: #666; font-size: 1.2em; font-family: 'Inter', sans-serif; font-weight: 600; margin-bottom: 40px;">Plataforma SaaS de Abastecimiento B2B</h3>
+                <p style="font-size: 0.7em; margin-bottom: 5px; color: #222;"><strong>NOMBRE:</strong> JUAN SEBASTIAN TRUJILLO</p>
+                <p style="font-size: 0.7em; margin-top: 0; color: #222;"><strong>PROGRAMA:</strong> TECNÓLOGO EN ANÁLISIS Y DESARROLLO DE SOFTWARE</p>
+            </section>
+
+            <section>
+                <h2 class="sena-green" style="font-size: 1.5em; line-height: 1.3;">Aspectos base y generales del proyecto empresarial</h2>
+            </section>
+
+            <section>
+                <h2 class="sena-green" style="text-transform: uppercase; font-size: 1.1em; margin-top: 80px; margin-bottom: 20px;">OBJETIVOS DEL PROYECTO</h2>
+                <div style="text-align: left; font-size: 0.5em; background: #f9f9f9; padding: 25px; border-radius: 12px; border-left: 6px solid #FF6A13; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <h4 class="highlight" style="margin-top: 0; margin-bottom: 10px; font-size: 1.1em;">OBJETIVO GENERAL</h4>
+                    <p style="margin-top: 0; margin-bottom: 25px; line-height: 1.4;">Implementar la plataforma SaaS ProvEEndo para digitalizar y optimizar la cadena de abastecimiento B2B entre distribuidoras mayoristas y tiendas de barrio en Neiva, mejorando su eficiencia logística y comercial.</p>
+                    <h4 class="highlight" style="margin-bottom: 10px; font-size: 1.1em;">OBJETIVOS ESPECÍFICOS</h4>
+                    <ul style="margin-top: 0; line-height: 1.4;">
+                        <li style="margin-bottom: 10px;">Diseñar el prototipo funcional de la plataforma adaptado a las necesidades reales de distribuidores y tenderos.</li>
+                        <li style="margin-bottom: 10px;">Implementar un modelo de suscripción (SaaS) rentable y escalable para la comercialización del software.</li>
+                        <li style="margin-bottom: 0;">Validar la viabilidad técnica y financiera del proyecto a través de indicadores de rentabilidad a 5 años.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="sena-green" style="text-transform: uppercase; font-size: 1.1em; margin-top: 60px;">Lienzo del Proyecto</h2>
+                <div class="canvas-grid">
+                    <div class="canvas-box" style="grid-column: 1; grid-row: 1;">
+                        <div class="canvas-title">Productos o Servicios</div>Licencias SaaS de ProvEEndo (Panel web y portal de pedidos).
+                    </div>
+                    <div class="canvas-box" style="grid-column: 1; grid-row: 2;">
+                        <div class="canvas-title">Socios Clave</div>Pasarelas de pago online, facturación electrónica (Siigo) y Fenalco Huila.
+                    </div>
+                    <div class="canvas-box" style="grid-column: 2; grid-row: 1;">
+                        <div class="canvas-title">Actividades Clave</div>Desarrollo y actualización continua de la plataforma web.
+                    </div>
+                    <div class="canvas-box" style="grid-column: 2; grid-row: 2;">
+                        <div class="canvas-title">Recursos Clave</div>Equipo desarrollador (Full-Stack) y servidores Cloud.
+                    </div>
+                    <div class="canvas-box" style="grid-column: 3; grid-row: 1 / 3; border-top: 5px solid #FF6A13;">
+                        <div class="canvas-title" style="color: #39A900;">Propuesta de Valor</div>Digitalización total de pedidos.<br><br><strong>Para Distribuidores:</strong> Rutas eficientes y aumento de ventas.<br><strong>Para Tenderos:</strong> Catálogo web 24/7 sin desabastecimiento.
+                    </div>
+                    <div class="canvas-box" style="grid-column: 4; grid-row: 1;">
+                        <div class="canvas-title">Relación con el Cliente</div>Soporte ágil y capacitaciones online.
+                    </div>
+                    <div class="canvas-box" style="grid-column: 4; grid-row: 2;">
+                        <div class="canvas-title">Canales</div>Página web, demos y fuerza de ventas B2B.
+                    </div>
+                    <div class="canvas-box" style="grid-column: 5; grid-row: 1 / 3;">
+                        <div class="canvas-title">Actividades Clave</div>Prospección comercial de tiendas de barrio en Neiva, fidelización y atención continua a distribuidores.
+                    </div>
+                    <div class="canvas-box" style="grid-column: 1 / 4; grid-row: 3;">
+                        <div class="canvas-title">Estructura de Costos</div>Nómina austera, costos de servidores en la nube y publicidad digital.
+                    </div>
+                    <div class="canvas-box" style="grid-column: 4 / 6; grid-row: 3;">
+                        <div class="canvas-title">Fuente de Ingresos</div>Suscripciones mensuales B2B (Modelo SaaS) cobradas a las distribuidoras.
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="sena-green" style="font-size: 1.5em; line-height: 1.3;">Análisis y estudio de mercados</h2>
+            </section>
+
+            <section>
+                <h2 class="sena-green" style="text-transform: uppercase; font-size: 1.1em; margin-top: 60px;">Estudio de mercado</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 0.45em; text-align: left; margin-top: 20px;">
+                    <div style="border: 2px solid #ddd; padding: 15px; border-radius: 8px;">
+                        <h4 class="box-title">Caracterización del cliente</h4>
+                        <div style="display: flex; margin-bottom: 10px;">
+                            <div style="background: #39A900; color: white; padding: 8px; width: 30%; font-weight: bold; text-align: center; display: flex; align-items: center; justify-content: center;">Personas</div>
+                            <div style="background: #f4f4f4; padding: 8px; width: 70%; margin-left: 5px; border: 1px solid #ddd;">Tenderos de barrio tradicionales.</div>
+                        </div>
+                        <div style="display: flex;">
+                            <div style="background: #39A900; color: white; padding: 8px; width: 30%; font-weight: bold; text-align: center; display: flex; align-items: center; justify-content: center;">Empresas</div>
+                            <div style="background: #f4f4f4; padding: 8px; width: 70%; margin-left: 5px; border: 1px solid #ddd;">Distribuidoras mayoristas B2B.</div>
+                        </div>
+                    </div>
+                    <div style="border: 2px solid #ddd; padding: 15px; border-radius: 8px;">
+                        <h4 class="box-title">Demanda Potencial</h4>
+                        <div style="background: #a3c9a8; padding: 25px; text-align: center; font-weight: bold; border-radius: 8px; margin: 0 auto; width: 70%; color: #1a1a1a;">
+                            180 Empresas / Año<br><span style="font-size: 0.8em; font-weight: normal; color: #333;">(Distribuidoras cliente SaaS)</span>
+                        </div>
+                    </div>
+                    <div style="border: 2px solid #ddd; padding: 15px; border-radius: 8px; display: flex; flex-direction: column; justify-content: center;">
+                        <h4 class="box-title">Precios de venta de los productos o servicios</h4>
+                        <div style="display: flex; align-items: center; justify-content: center;">
+                            <div style="width: 100%;">
+                                <div style="background: #f4f4f4; border: 1px solid #ddd; padding: 15px; margin-bottom: 8px; text-align: center; border-left: 6px solid #FF6A13;">
+                                    <strong>Precio 1: Licencia SaaS B2B</strong><br><span class="sena-green" style="font-size: 1.4em; font-weight: bold;">$916.307 COP / Año</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border: 2px solid #ddd; padding: 15px; border-radius: 8px;">
+                        <h4 class="box-title">Zona donde ofertará el producto o servicio</h4>
+                        <div style="display: flex; align-items: center; margin-bottom: 15px; margin-top: 10px;">
+                            <strong style="width: 40%; text-align: right; padding-right: 15px;">🌍 País:</strong><div style="border: 1px solid #ccc; padding: 8px; width: 60%; background: #fff; text-align: center;">Colombia</div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <strong style="width: 40%; text-align: right; padding-right: 15px;">👥 Departamento:</strong><div style="border: 1px solid #ccc; padding: 8px; width: 60%; background: #fff; text-align: center;">Huila</div>
+                        </div>
+                        <div style="display: flex; align-items: center;">
+                            <strong style="width: 40%; text-align: right; padding-right: 15px;">🏙️ Ciudad:</strong><div style="border: 1px solid #ccc; padding: 8px; width: 60%; background: #fff; text-align: center;">Neiva</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="sena-green" style="text-transform: uppercase; font-size: 1.1em; margin-top: 60px;">Análisis de la competencia</h2>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1.1fr 1fr; grid-template-rows: auto auto; gap: 15px; font-size: 0.38em; text-align: left; margin-top: 30px;">
+                    <div style="border: 2px solid #39A900; padding: 12px; border-radius: 8px; background: #fff;">
+                        <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
+                            <span style="color: #1a1a1a;">1. App Chiper (Nacional)</span><span>📊</span>
+                        </div>
+                        <span style="color: #39A900; font-weight: bold;">✔ Ventaja (ProvEEndo):</span><br> Nosotros somos "Marca Blanca" y aliada del distribuidor local.<br><br><span style="color: #d9534f; font-weight: bold;">✖ Desventaja:</span><br> Tienen inmenso capital.
+                    </div>
+                    <div style="border: 2px solid #FF6A13; padding: 15px; border-radius: 8px; background: #fdfdfd; grid-column: 2; grid-row: 1 / 3; align-self: center; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+                        <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 10px; font-size: 1.1em; border-bottom: 1px solid #eee; padding-bottom: 5px;">
+                            <span style="color: #1a1a1a;">3. ERP Tradicional (Siigo/SAP)</span><span>📊</span>
+                        </div>
+                        <span style="color: #39A900; font-weight: bold;">✔ Ventaja (ProvEEndo):</span><br> Los ERPs son software de uso interno. Nosotros le damos un portal web interactivo al tendero para que se autogestione sin instalar nada.<br><br><span style="color: #d9534f; font-weight: bold;">✖ Desventaja:</span><br> Estas casas llevan años y tienen la confianza de los contadores.
+                    </div>
+                    <div style="border: 2px solid #39A900; padding: 12px; border-radius: 8px; background: #fff; grid-column: 3; grid-row: 1;">
+                        <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
+                            <span style="color: #1a1a1a;">4. App Treinta</span><span>📊</span>
+                        </div>
+                        <span style="color: #39A900; font-weight: bold;">✔ Ventaja (ProvEEndo):</span><br> Web conectada al inventario real del distribuidor.<br><br><span style="color: #d9534f; font-weight: bold;">✖ Desventaja:</span><br> Ya está instalada en el celular de casi todos.
+                    </div>
+                    <div style="border: 2px solid #39A900; padding: 12px; border-radius: 8px; background: #fff; grid-column: 1; grid-row: 2;">
+                        <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
+                            <span style="color: #1a1a1a;">2. Preventistas (Ruta)</span><span>📊</span>
+                        </div>
+                        <span style="color: #39A900; font-weight: bold;">✔ Ventaja (ProvEEndo):</span><br> Ventas web 24/7 sin visitas físicas.<br><br><span style="color: #d9534f; font-weight: bold;">✖ Desventaja:</span><br> Sin la persuasión humana.
+                    </div>
+                    <div style="border: 2px solid #39A900; padding: 12px; border-radius: 8px; background: #fff; grid-column: 3; grid-row: 2;">
+                        <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
+                            <span style="color: #1a1a1a;">5. WhatsApp (Status Quo)</span><span>📊</span>
+                        </div>
+                        <span style="color: #39A900; font-weight: bold;">✔ Ventaja (ProvEEndo):</span><br> Catálogo visual en la web con stock al instante.<br><br><span style="color: #d9534f; font-weight: bold;">✖ Desventaja:</span><br> Costumbre de chatear.
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="sena-green" style="text-transform: uppercase; font-size: 1.1em; margin-top: 60px;">Estrategias de mercado y promociones</h2>
+                <div style="display: flex; justify-content: space-between; margin-top: 40px; font-size: 0.45em; text-align: left;">
+                    <div style="width: 70%; display: flex; flex-direction: column; gap: 15px;">
+                        <div style="display: flex; align-items: stretch; background: #fff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <div style="background: #39A900; color: white; padding: 15px; width: 25%; font-weight: bold; display: flex; align-items: center; justify-content: center; text-align: center;">Estrategia de Mercado 1</div>
+                            <div style="padding: 15px; width: 75%;"><strong>Pauta Digital "Orgullo Opita":</strong> Pauta hipersegmentada (Ads) en Neiva usando un tono regional fuerte para generar conexión B2B. Mensaje clave: <em>"Software web huilense para modernizar a las distribuidoras y tiendas de nuestra tierra."</em></div>
+                        </div>
+                        <div style="display: flex; align-items: stretch; background: #fff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <div style="background: #4bbd14; color: white; padding: 15px; width: 25%; font-weight: bold; display: flex; align-items: center; justify-content: center; text-align: center;">Estrategia de Mercado 2</div>
+                            <div style="padding: 15px; width: 75%;"><strong>Visitas Comerciales y Demos B2B:</strong> Recorridos presenciales por Surabastos y la Zona Industrial de Neiva, ofreciendo demostraciones en vivo de la plataforma web a los gerentes de distribuidoras.</div>
+                        </div>
+                        <div style="display: flex; align-items: stretch; background: #fff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <div style="background: #5dc928; color: white; padding: 15px; width: 25%; font-weight: bold; display: flex; align-items: center; justify-content: center; text-align: center;">Estrategia de Promoción 3</div>
+                            <div style="padding: 15px; width: 75%;"><strong>Adopción Cero Riesgo:</strong> El primer mes de licencia incluye sin costo adicional la parametrización de su inventario inicial en la base de datos para derribar la barrera del miedo a la tecnología.</div>
+                        </div>
+                        <div style="display: flex; align-items: stretch; background: #fff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <div style="background: #73d645; color: white; padding: 15px; width: 25%; font-weight: bold; display: flex; align-items: center; justify-content: center; text-align: center;">Estrategia de Promoción 4</div>
+                            <div style="padding: 15px; width: 75%;"><strong>Kit "Tendero Conectado":</strong> Entrega de material publicitario físico (stickers, habladores) a los tenderos, con un código QR que los lleva <strong>directamente al portal web</strong> de pedidos sin necesidad de descargar ni instalar nada.</div>
+                        </div>
+                    </div>
+                    <div style="width: 25%; display: flex; align-items: center; justify-content: center;"><div style="font-size: 8em; filter: drop-shadow(0 10px 10px rgba(0,0,0,0.1));">🤝</div></div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="sena-green" style="text-transform: uppercase; font-size: 1.1em; margin-top: 60px;">Distribución</h2>
+                <div style="font-size: 0.45em; text-align: left; margin-top: 30px;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <div style="border: 2px solid #ddd; padding: 15px; border-radius: 8px;">
+                            <h4 class="box-title" style="margin-bottom: 20px;">Canales de distribución</h4>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; text-align: center;">
+                                <div style="border: 2px solid #39A900; background: #e8f5e9; color: #39A900; padding: 10px; font-weight: bold; border-radius: 5px;">✔ Directa</div>
+                                <div style="border: 1px solid #eee; color: #aaa; padding: 10px; border-radius: 5px; background: #fdfdfd;">Indirecta</div>
+                                <div style="border: 1px solid #eee; color: #aaa; padding: 10px; border-radius: 5px; background: #fdfdfd;">Local físico</div>
+                                <div style="border: 1px solid #eee; color: #aaa; padding: 10px; border-radius: 5px; background: #fdfdfd;">Canal corto</div>
+                                <div style="border: 1px solid #eee; color: #aaa; padding: 10px; border-radius: 5px; background: #fdfdfd;">Servicio a domicilio</div>
+                                <div style="border: 1px solid #eee; color: #aaa; padding: 10px; border-radius: 5px; background: #fdfdfd;">Canal largo</div>
+                            </div>
+                        </div>
+                        <div style="border: 2px solid #ddd; padding: 15px; border-radius: 8px;">
+                            <h4 class="box-title">Formas de distribución</h4>
+                            <div style="background: #f9f9f9; padding: 20px; border-left: 5px solid #FF6A13; height: 60%; display: flex; align-items: center;">
+                                <p style="margin: 0; line-height: 1.5;"><strong>Selectiva B2B:</strong><br><br>La plataforma no es de distribución masiva. Está segmentada y dirigida exclusivamente a <strong>distribuidoras mayoristas</strong> de la región, vendiendo la licencia de manera directa y personalizada.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border: 2px solid #ddd; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                        <h4 class="box-title">Indique otras estrategias de Distribución</h4>
+                        <div style="background: #f4f4f4; padding: 15px; border-radius: 5px; border-left: 5px solid #39A900;">
+                            <strong>Distribución 100% Digital (Cloud / SaaS):</strong><br>Al ser un producto puramente de software web, no hay envíos físicos ni instalaciones de hardware. La "entrega" se realiza habilitando de forma remota el entorno web para el distribuidor y suministrándole las credenciales de acceso seguras (URL, usuario y contraseña) inmediatamente tras la firma del acuerdo B2B.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 10. Separador Análisis y Estudio Técnico -->
+            <section>
+                <h2 class="sena-green" style="font-size: 1.5em; line-height: 1.3;">Análisis y estudio técnico</h2>
+            </section>
+
+            <!-- 11. Ficha Técnica -->
+            <section>
+                <br>
+                <h2 class="sena-green" style="text-transform: uppercase; font-size: 1.1em; margin-top: 90px; margin-bottom: 20px;">Ficha técnica del producto o servicio</h2>
+                <table style="width: 100%; border-collapse: collapse; font-size: 0.35em; text-align: left;">
+                    <tr>
+                        <th colspan="3" style="text-align: center; font-weight: bold; padding: 8px; border: 1px solid #333; background: #fff;">FICHA TÉCNICA PRODUCTO No. 1</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd; width: 35%;">Nombre del Producto:</td>
+                        <td style="border: 1px solid #333; padding: 8px; background: #dcedc8; color: #1a1a1a; width: 45%;">Licencia SaaS B2B ProvEEndo</td>
+                        <td rowspan="10" style="border: 1px solid #333; text-align: center; background: #fff; width: 20%; vertical-align: middle;">
+                            <div style="font-size: 4em; margin-bottom: 10px;">💻☁️</div>
+                            <strong style="color: #666;">Imagen del Producto</strong><br>(Plataforma Web SaaS)
+                        </td>
+                    </tr>
+                    <tr><td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd;">Nombre Comercial:</td><td style="border: 1px solid #333; padding: 8px; background: #dcedc8; color: #1a1a1a;">ProvEEndo</td></tr>
+                    <tr><td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd;">Descripción General del Producto:</td><td style="border: 1px solid #333; padding: 8px; background: #dcedc8; color: #1a1a1a;">Plataforma web en la nube que conecta distribuidoras mayoristas con tiendas de barrio para gestionar catálogos y pedidos automatizados B2B en tiempo real.</td></tr>
+                    <tr><td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd;">Presentación y empaque del producto:</td><td style="border: 1px solid #333; padding: 8px; background: #dcedc8; color: #1a1a1a;">100% Digital (SaaS). Se entrega acceso al portal web con credenciales seguras. Sin instalación local ni cajas físicas.</td></tr>
+                    <tr><td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd;">Vida útil del producto:</td><td style="border: 1px solid #333; padding: 8px; background: #dcedc8; color: #1a1a1a;">Indefinida mientras se mantenga activa la suscripción periódica al servicio en la nube.</td></tr>
+                    <tr><td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd;">Condiciones de Almacenamiento: <span style="font-size: 0.8em; font-weight: normal; color: #555;"><br>(Advertencias de almacenamiento o uso)</span></td><td style="border: 1px solid #333; padding: 8px; background: #dcedc8; color: #1a1a1a;">Alojamiento en servidores Cloud seguros (Alta disponibilidad, backups diarios automatizados). No requiere espacio en discos locales del cliente.</td></tr>
+                    <tr><td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd;">Condiciones de uso:</td><td style="border: 1px solid #333; padding: 8px; background: #dcedc8; color: #1a1a1a;">Conexión a internet estable (3G/4G/Banda ancha) y navegador moderno (Chrome, Safari, Edge) en PC o móvil.</td></tr>
+                    <tr><td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd;">Composición (Si Aplica):</td><td style="border: 1px solid #333; padding: 8px; background: #dcedc8; color: #1a1a1a;">Frontend Web (UI interactiva), Backend Cloud, API de conexión B2B y Base de Datos Relacional.</td></tr>
+                    <tr><td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd;">Mínimo / Máximo de Producción:</td><td style="border: 1px solid #333; padding: 8px; background: #dcedc8; color: #1a1a1a;"><strong>Mínimo:</strong> 1 Licencia activa base.<br><strong>Máximo:</strong> Arquitectura escalable lista para procesar más de 10.000 usuarios recurrentes.</td></tr>
+                    <tr><td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd;">Otro - ¿Cuál? (Soporte Técnico):</td><td style="border: 1px solid #333; padding: 8px; background: #dcedc8; color: #1a1a1a;">Soporte virtual en línea y actualizaciones de software automáticas e invisibles para el cliente.</td></tr>
+                </table>
+            </section>
+
+
+            <!-- 12. Requerimiento y activos -->
+            <section>
+                <h2 class="sena-green" style="font-size: 1.5em; text-transform: none; margin-top: 80px; margin-bottom: 40px; text-align: center;">Requerimiento y activos</h2>
+
+                <div style="display: flex; justify-content: space-between; gap: 8px; font-size: 0.35em;">
+                    <!-- Column 1 -->
+                    <div style="flex: 1; text-align: center;">
+                        <div style="background: #a3c9a8; padding: 15px 5px; border-radius: 8px; font-weight: bold; height: 50px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: #1a1a1a;">
+                            Maquinaria y<br>equipo
+                        </div>
+                        <div style="border: 1px solid #64b5f6; border-radius: 12px; padding: 25px 5px; font-weight: bold; background: #fff; height: 70px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                            <span style="font-size: 0.9em; color: #555;">Cantidad y precio total*</span>
+                            <span style="font-size: 1.2em; margin-top: 5px; color: #333;">$2.200.000</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 (Highlighted) -->
+                    <div style="flex: 1; text-align: center;">
+                        <div style="background: #a3c9a8; padding: 15px 5px; border-radius: 8px; font-weight: bold; height: 50px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; border: 2px solid #000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); color: #1a1a1a;">
+                            Equipo de<br>Comunicación<br>y Computación
+                        </div>
+                        <div style="border: 2px solid #64b5f6; border-radius: 12px; padding: 25px 5px; font-weight: bold; background: #fdfdfd; height: 70px; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <span style="font-size: 0.9em; color: #555;">Cantidad y precio total*</span>
+                            <span style="font-size: 1.2em; margin-top: 5px; color: #39A900;">$10.300.000</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div style="flex: 1; text-align: center;">
+                        <div style="background: #a3c9a8; padding: 15px 5px; border-radius: 8px; font-weight: bold; height: 50px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: #1a1a1a;">
+                            Muebles y<br>Enseres
+                        </div>
+                        <div style="border: 1px solid #64b5f6; border-radius: 12px; padding: 25px 5px; font-weight: bold; background: #fff; height: 70px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                            <span style="font-size: 0.9em; color: #555;">Cantidad y precio total*</span>
+                            <span style="font-size: 1.2em; margin-top: 5px; color: #333;">$1.600.000</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div style="flex: 1; text-align: center;">
+                        <div style="background: #a3c9a8; padding: 15px 5px; border-radius: 8px; font-weight: bold; height: 50px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: #1a1a1a;">
+                            Semovientes<br>y cultivos
+                        </div>
+                        <div style="border: 1px solid #64b5f6; border-radius: 12px; padding: 25px 5px; font-weight: bold; background: #fff; height: 70px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                            <span style="font-size: 0.9em; color: #555;">Cantidad y precio total*</span>
+                            <span style="font-size: 1.2em; margin-top: 5px; color: #333;">$0</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 5 -->
+                    <div style="flex: 1; text-align: center;">
+                        <div style="background: #a3c9a8; padding: 15px 5px; border-radius: 8px; font-weight: bold; height: 50px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: #1a1a1a;">
+                            Herramientas<br>y otros
+                        </div>
+                        <div style="border: 1px solid #64b5f6; border-radius: 12px; padding: 25px 5px; font-weight: bold; background: #fff; height: 70px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                            <span style="font-size: 0.9em; color: #555;">Cantidad y precio total*</span>
+                            <span style="font-size: 1.2em; margin-top: 5px; color: #333;">$700.000</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 6 -->
+                    <div style="flex: 1; text-align: center;">
+                        <div style="background: #a3c9a8; padding: 15px 5px; border-radius: 8px; font-weight: bold; height: 50px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: #1a1a1a;">
+                            Infraestructura<br>y adecuaciones
+                        </div>
+                        <div style="border: 1px solid #64b5f6; border-radius: 12px; padding: 25px 5px; font-weight: bold; background: #fff; height: 70px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                            <span style="font-size: 0.9em; color: #555;">Cantidad y precio total*</span>
+                            <span style="font-size: 1.2em; margin-top: 5px; color: #333;">$2.040.000</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 7 -->
+                    <div style="flex: 1; text-align: center;">
+                        <div style="background: #a3c9a8; padding: 15px 5px; border-radius: 8px; font-weight: bold; height: 50px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: #1a1a1a;">
+                            Gastos Pre -<br>Operativos
+                        </div>
+                        <div style="border: 1px solid #64b5f6; border-radius: 12px; padding: 25px 5px; font-weight: bold; background: #fff; height: 70px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                            <span style="font-size: 0.9em; color: #555;">Cantidad y precio total*</span>
+                            <span style="font-size: 1.2em; margin-top: 5px; color: #333;">$0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Total box -->
+                <div style="display: flex; align-items: center; justify-content: flex-end; margin-top: 40px; font-size: 0.5em;">
+                    <div style="font-size: 3em; margin-right: 15px; filter: drop-shadow(0 4px 4px rgba(0,0,0,0.2));">📠</div>
+                    <div style="border: 2px solid #333; padding: 15px 30px; text-align: center; background: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+                        <div style="color: #d9534f; font-weight: bold; font-size: 0.8em; margin-bottom: 5px;">Valor total requerimiento y activos*</div>
+                        <div style="font-weight: bold; font-size: 1.4em; color: #1a1a1a;">$16.840.000 COP</div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- 13. Presupuesto de costos de producción -->
+            <section>
+                <h2 class="sena-green" style="font-size: 1.5em; text-transform: none; margin-top: 80px; margin-bottom: 40px; text-align: center;">Presupuesto de costos de producción</h2>
+
+                <!-- Top Table -->
+                <table style="width: 80%; margin: 0 auto; border-collapse: collapse; font-size: 0.38em; text-align: center; margin-bottom: 40px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <tr>
+                        <th style="border: 1px solid #333; background: #fff;"></th>
+                        <th colspan="4" style="border: 1px solid #333; background: #39A900; color: white; padding: 8px;">Costos variables por unidad o servicio</th>
+                    </tr>
+                    <tr style="background: #e8f5e9; font-weight: bold; color: #1a1a1a;">
+                        <td style="border: 1px solid #333; padding: 8px; background: #fdfdfd;"></td>
+                        <td style="border: 1px solid #333; padding: 8px;">Producto o<br>servicio 1</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #888;">Producto o<br>servicio 2</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #888;">Producto o<br>servicio 3</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #888;">Producto o<br>servicio 4</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd; text-align: left;">Costo unitario</td>
+                        <td style="border: 1px solid #333; padding: 8px;">$ 482.267</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">-</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">-</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">-</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd; text-align: left;">Valor mensual</td>
+                        <td style="border: 1px solid #333; padding: 8px;">$ 7.234.000</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">-</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">-</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">-</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd; text-align: left;">Valor anual</td>
+                        <td style="border: 1px solid #333; padding: 8px; background: #dcedc8; font-weight: bold;">$ 86.808.000</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">-</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">-</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">-</td>
+                    </tr>
+                </table>
+
+                <!-- Bottom Table -->
+                <table style="width: 95%; margin: 0 auto; border-collapse: collapse; font-size: 0.38em; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <tr>
+                        <th style="border: 1px solid #333; background: #fff;"></th>
+                        <th colspan="5" style="border: 1px solid #333; background: #39A900; color: white; padding: 8px;">Presupuesto costos de producción proyectada</th>
+                    </tr>
+                    <tr style="background: #e8f5e9; font-weight: bold; color: #1a1a1a;">
+                        <td style="border: 1px solid #333; padding: 8px; text-align: left;">Bien o servicio</td>
+                        <td style="border: 1px solid #333; padding: 8px; width: 14%;">Año 1</td>
+                        <td style="border: 1px solid #333; padding: 8px; width: 14%;">Año 2</td>
+                        <td style="border: 1px solid #333; padding: 8px; width: 14%;">Año 3</td>
+                        <td style="border: 1px solid #333; padding: 8px; width: 14%;">Año 4</td>
+                        <td style="border: 1px solid #333; padding: 8px; width: 14%;">Año 5</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd; text-align: left;">Producto o servicio 1</td>
+                        <td style="border: 1px solid #333; padding: 8px;">$ 86.808.000</td>
+                        <td style="border: 1px solid #333; padding: 8px;">$ 93.522.078</td>
+                        <td style="border: 1px solid #333; padding: 8px;">$ 99.694.535</td>
+                        <td style="border: 1px solid #333; padding: 8px;">$ 105.865.627</td>
+                        <td style="border: 1px solid #333; padding: 8px;">$ 111.767.636</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd; text-align: left; color: #aaa;">Producto o servicio 2</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">$ 0</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">$ 0</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">$ 0</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">$ 0</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">$ 0</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd; text-align: left; color: #aaa;">Producto o servicio 3</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">$ 0</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">$ 0</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">$ 0</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">$ 0</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">$ 0</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #333; padding: 8px; font-weight: bold; background: #fdfdfd; text-align: left; color: #aaa;">Producto o servicio 4</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">$ 0</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">$ 0</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">$ 0</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">$ 0</td>
+                        <td style="border: 1px solid #333; padding: 8px; color: #aaa;">$ 0</td>
+                    </tr>
+                    <tr style="background: #dcedc8; font-weight: bold; color: #1a1a1a;">
+                        <td style="border: 1px solid #333; padding: 8px; text-align: left;">Total</td>
+                        <td style="border: 1px solid #333; padding: 8px;">$ 86.808.000</td>
+                        <td style="border: 1px solid #333; padding: 8px;">$ 93.522.078</td>
+                        <td style="border: 1px solid #333; padding: 8px;">$ 99.694.535</td>
+                        <td style="border: 1px solid #333; padding: 8px;">$ 105.865.627</td>
+                        <td style="border: 1px solid #333; padding: 8px;">$ 111.767.636</td>
+                    </tr>
+                </table>
+            </section>
+
+
+            <!-- 14. Mano de obra directa -->
+            <section>
+                <h2 class="sena-green" style="font-size: 1.5em; text-transform: none; margin-top: 80px; margin-bottom: 20px; text-align: center;">Requerimientos de mano de obra directa</h2>
+                
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 95%; margin: 0 auto;">
+                    
+                    <!-- Icons Row -->
+                    <div style="display: flex; justify-content: flex-end; width: 100%; margin-bottom: 10px;">
+                        <div style="width: 15%;"></div>
+                        <div style="width: 12.1%; text-align: center; font-size: 2.2em; filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));">👷</div>
+                        <div style="width: 12.1%; text-align: center; font-size: 2.2em; opacity: 0.3;">👷</div>
+                        <div style="width: 12.1%; text-align: center; font-size: 2.2em; opacity: 0.3;">👷</div>
+                        <div style="width: 12.1%; text-align: center; font-size: 2.2em; opacity: 0.3;">👷</div>
+                        <div style="width: 12.1%; text-align: center; font-size: 2.2em; opacity: 0.3;">👷</div>
+                        <div style="width: 12.1%; text-align: center; font-size: 2.2em; opacity: 0.3;">👷</div>
+                        <div style="width: 12.1%; text-align: center; font-size: 2.2em; opacity: 0.3;">👷</div>
+                    </div>
+
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.35em; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                        <!-- Row 1: Nombre del cargo -->
+                        <tr style="background: #e0e0e0; font-weight: bold; color: #39A900;">
+                            <td style="width: 15%; border: 1px solid #333; background: #fff;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; width: 12.1%; color: #1a1a1a;">Desarrollador<br>Full-Stack</td>
+                            <td style="border: 1px solid #333; padding: 10px; width: 12.1%; color: #888;">Nombre<br>del cargo</td>
+                            <td style="border: 1px solid #333; padding: 10px; width: 12.1%; color: #888;">Nombre<br>del cargo</td>
+                            <td style="border: 1px solid #333; padding: 10px; width: 12.1%; color: #888;">Nombre<br>del cargo</td>
+                            <td style="border: 1px solid #333; padding: 10px; width: 12.1%; color: #888;">Nombre<br>del cargo</td>
+                            <td style="border: 1px solid #333; padding: 10px; width: 12.1%; color: #888;">Nombre<br>del cargo</td>
+                            <td style="border: 1px solid #333; padding: 10px; width: 12.1%; color: #888;">Nombre<br>del cargo</td>
+                        </tr>
+                        <!-- Row 2: Tipo de contrato -->
+                        <tr>
+                            <td style="border: 1px solid #333; padding: 10px; font-weight: bold; background: #e0e0e0;">
+                                <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                                    <span style="font-size: 2em;">📅</span> <span style="text-align: left; line-height: 1.2;">Tipo de<br>contrato</span>
+                                </div>
+                            </td>
+                            <td style="border: 1px solid #333; padding: 10px; font-weight: bold; color: #1a1a1a; background: #fff;">C. Indefinido</td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                        </tr>
+                        <!-- Row 3: Valor neto pagado -->
+                        <tr>
+                            <td style="border: 1px solid #333; padding: 10px; font-weight: bold; background: #e0e0e0;">
+                                <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                                    <span style="font-size: 2em; color: #333;">📠</span> <span style="text-align: left; line-height: 1.2; color: #39A900;">Valor neto<br>pagado</span>
+                                </div>
+                            </td>
+                            <td style="border: 1px solid #333; padding: 10px; font-weight: bold; color: #39A900; background: #fff;">$ 2.500.000</td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 15. Separador Análisis Organizacional y Legal -->
+            <section>
+                <h2 class="sena-green" style="font-size: 1.5em; line-height: 1.3;">Análisis organizacional y legal</h2>
+            </section>
+
+
+            <!-- 16. Organigrama -->
+            <section>
+                <style>
+                    .org-tree ul {
+                        padding-top: 20px; position: relative;
+                        display: flex; justify-content: center;
+                        margin: 0; padding-left: 0;
+                    }
+                    .org-tree li {
+                        float: left; text-align: center;
+                        list-style-type: none;
+                        position: relative;
+                        padding: 20px 10px 0 10px;
+                    }
+                    .org-tree li::before, .org-tree li::after {
+                        content: ''; position: absolute; top: 0; right: 50%;
+                        border-top: 2px solid #ccc;
+                        width: 50%; height: 20px;
+                    }
+                    .org-tree li::after {
+                        right: auto; left: 50%; border-left: 2px solid #ccc;
+                    }
+                    .org-tree li:only-child::after, .org-tree li:only-child::before {
+                        display: none;
+                    }
+                    .org-tree li:only-child { padding-top: 0; }
+                    .org-tree li:first-child::before, .org-tree li:last-child::after {
+                        border: 0 none;
+                    }
+                    .org-tree li:last-child::before {
+                        border-right: 2px solid #ccc; border-radius: 0 5px 0 0;
+                    }
+                    .org-tree li:first-child::after {
+                        border-radius: 5px 0 0 0;
+                    }
+                    .org-tree ul ul::before {
+                        content: ''; position: absolute; top: 0; left: 50%;
+                        border-left: 2px solid #ccc; width: 0; height: 20px;
+                    }
+                    .org-node {
+                        background: #fff;
+                        border: 2px solid #ccc;
+                        padding: 15px;
+                        border-radius: 8px;
+                        font-size: 0.45em;
+                        font-weight: bold;
+                        display: inline-block;
+                        position: relative;
+                        z-index: 2;
+                        min-width: 170px;
+                        box-shadow: 6px 6px 0px #eee;
+                        font-family: 'Inter', sans-serif;
+                        line-height: 1.3;
+                    }
+                    .node-top { border-color: #999; box-shadow: 6px 6px 0px #ccc; color: #333; }
+                    .node-mid { border-color: #64b5f6; box-shadow: 6px 6px 0px #bbdefb; color: #1565c0; }
+                    .node-bot { border-color: #81c784; box-shadow: 6px 6px 0px #c8e6c9; color: #2e7d32; }
+                    .node-icon { font-size: 2.2em; margin-bottom: 5px; filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1)); }
+                </style>
+
+                <h2 class="sena-green" style="font-size: 1.5em; text-transform: none; margin-top: 60px; margin-bottom: 20px; text-align: center;">Organigrama</h2>
+                
+                <div style="position: relative; width: 100%; height: 100%;">
+                    <div class="org-tree">
+                        <ul>
+                            <li>
+                                <div class="org-node node-top">
+                                    <div class="node-icon">💼</div>
+                                    Gerencia General
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="org-node node-mid">
+                                            <div class="node-icon">💻</div>
+                                            Tecnología y Soporte
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="org-node node-bot">
+                                                    <div class="node-icon">👨‍💻</div>
+                                                    Desarrollador<br>Full-Stack
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="org-node node-bot">
+                                                    <div class="node-icon">🎧</div>
+                                                    Soporte<br>Técnico
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="org-node node-mid">
+                                            <div class="node-icon">📈</div>
+                                            Administración y Ventas
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="org-node node-bot">
+                                                    <div class="node-icon">📝</div>
+                                                    Contabilidad y<br>Comercial B2B
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Decorative Graphic (Bottom Right) -->
+                    <div style="position: absolute; bottom: -20px; right: 20px; text-align: center; font-size: 3.5em; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15)); z-index: 1;">
+                        ⚙️<span style="font-size: 0.8em; margin-left: -20px;">🤝</span>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- 17. Mano de obra administrativa -->
+            <section>
+                <h2 class="sena-green" style="font-size: 1.5em; text-transform: none; margin-top: 80px; margin-bottom: 20px; text-align: center;">Requerimientos de mano de obra ADM</h2>
+                
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 95%; margin: 0 auto;">
+                    
+                    <!-- Icons Row -->
+                    <div style="display: flex; justify-content: flex-end; width: 100%; margin-bottom: 10px;">
+                        <div style="width: 15%;"></div>
+                        <div style="width: 12.1%; text-align: center; font-size: 2.2em; filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));">👷</div>
+                        <div style="width: 12.1%; text-align: center; font-size: 2.2em; filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));">👷</div>
+                        <div style="width: 12.1%; text-align: center; font-size: 2.2em; opacity: 0.3;">👷</div>
+                        <div style="width: 12.1%; text-align: center; font-size: 2.2em; opacity: 0.3;">👷</div>
+                        <div style="width: 12.1%; text-align: center; font-size: 2.2em; opacity: 0.3;">👷</div>
+                        <div style="width: 12.1%; text-align: center; font-size: 2.2em; opacity: 0.3;">👷</div>
+                        <div style="width: 12.1%; text-align: center; font-size: 2.2em; opacity: 0.3;">👷</div>
+                    </div>
+
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.35em; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                        <!-- Row 1: Nombre del cargo -->
+                        <tr style="background: #e0e0e0; font-weight: bold; color: #39A900;">
+                            <td style="width: 15%; border: 1px solid #333; background: #fff;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; width: 12.1%; color: #1a1a1a;">Gerente<br>General</td>
+                            <td style="border: 1px solid #333; padding: 10px; width: 12.1%; color: #1a1a1a;">Contador<br>Público</td>
+                            <td style="border: 1px solid #333; padding: 10px; width: 12.1%; color: #888;">Nombre<br>del cargo</td>
+                            <td style="border: 1px solid #333; padding: 10px; width: 12.1%; color: #888;">Nombre<br>del cargo</td>
+                            <td style="border: 1px solid #333; padding: 10px; width: 12.1%; color: #888;">Nombre<br>del cargo</td>
+                            <td style="border: 1px solid #333; padding: 10px; width: 12.1%; color: #888;">Nombre<br>del cargo</td>
+                            <td style="border: 1px solid #333; padding: 10px; width: 12.1%; color: #888;">Nombre<br>del cargo</td>
+                        </tr>
+                        <!-- Row 2: Tipo de contrato -->
+                        <tr>
+                            <td style="border: 1px solid #333; padding: 10px; font-weight: bold; background: #e0e0e0;">
+                                <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                                    <span style="font-size: 2em;">📅</span> <span style="text-align: left; line-height: 1.2;">Tipo de<br>contrato</span>
+                                </div>
+                            </td>
+                            <td style="border: 1px solid #333; padding: 10px; font-weight: bold; color: #1a1a1a; background: #fff;">C. Indefinido</td>
+                            <td style="border: 1px solid #333; padding: 10px; font-weight: bold; color: #1a1a1a; background: #fff;">Servicios</td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                        </tr>
+                        <!-- Row 3: Valor neto pagado (Salario Base) -->
+                        <tr>
+                            <td style="border: 1px solid #333; padding: 10px; font-weight: bold; background: #e0e0e0;">
+                                <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                                    <span style="font-size: 2em; color: #333;">📠</span> <span style="text-align: left; line-height: 1.2; color: #39A900;">Valor neto<br>pagado</span>
+                                </div>
+                            </td>
+                            <td style="border: 1px solid #333; padding: 10px; font-weight: bold; color: #39A900; background: #fff;">$ 1.750.905</td>
+                            <td style="border: 1px solid #333; padding: 10px; font-weight: bold; color: #39A900; background: #fff;">$ 500.000</td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                            <td style="border: 1px solid #333; padding: 10px; background: #fdfdfd;"></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+
+            <!-- 18. Gastos administrativos de la unidad -->
+            <section>
+                <h2 class="sena-green" style="font-size: 1.5em; text-transform: none; margin-top: 80px; margin-bottom: 20px; text-align: center;">Gastos administrativos de la unidad</h2>
+
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 95%; margin: 0 auto;">
+                    
+                    <!-- Icons Row -->
+                    <div style="display: flex; justify-content: flex-start; width: 100%; margin-bottom: 10px; padding-left: 20px;">
+                        <div style="font-size: 3em; filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));">🖨️</div>
+                    </div>
+
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.35em; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                        <!-- Header -->
+                        <tr style="background: #39A900; font-weight: bold; color: white;">
+                            <td style="border: 1px solid #fff; padding: 12px; width: 22%;">Rubros</td>
+                            <td style="border: 1px solid #fff; padding: 12px; width: 13%;">Valor<br>mensual</td>
+                            <td style="border: 1px solid #fff; padding: 12px; width: 13%;">Valor anual<br>(Año 1)</td>
+                            <td style="border: 1px solid #fff; padding: 12px; width: 13%;">Año 2</td>
+                            <td style="border: 1px solid #fff; padding: 12px; width: 13%;">Año 3</td>
+                            <td style="border: 1px solid #fff; padding: 12px; width: 13%;">Año 4</td>
+                            <td style="border: 1px solid #fff; padding: 12px; width: 13%;">Año 5</td>
+                        </tr>
+                        <!-- Row 1 -->
+                        <tr style="background: #81c784; color: #1a1a1a;">
+                            <td style="border: 1px solid #fff; padding: 8px; text-align: left; font-weight: bold;">Servicios Telecomunicaciones</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 250.000</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 3.000.000</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 3.144.000</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 3.269.760</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 3.387.471</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 3.489.096</td>
+                        </tr>
+                        <!-- Row 2 -->
+                        <tr style="background: #a5d6a7; color: #1a1a1a;">
+                            <td style="border: 1px solid #fff; padding: 8px; text-align: left; font-weight: bold;">Suscripciones Software</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 120.000</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 1.440.000</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 1.509.120</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 1.569.485</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 1.625.986</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 1.674.766</td>
+                        </tr>
+                        <!-- Row 3 -->
+                        <tr style="background: #81c784; color: #1a1a1a;">
+                            <td style="border: 1px solid #fff; padding: 8px; text-align: left; font-weight: bold;">Gastos de Representación</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 300.000</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 3.600.000</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 3.772.800</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 3.923.712</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 4.064.966</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 4.186.915</td>
+                        </tr>
+                        <!-- Row 4 -->
+                        <tr style="background: #a5d6a7; color: #1a1a1a;">
+                            <td style="border: 1px solid #fff; padding: 8px; text-align: left; font-weight: bold;">Papelería, impresión y útiles</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 80.000</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 960.000</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 1.006.080</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 1.046.323</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 1.083.991</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 1.116.511</td>
+                        </tr>
+                        <!-- Row 5 -->
+                        <tr style="background: #81c784; color: #1a1a1a;">
+                            <td style="border: 1px solid #fff; padding: 8px; text-align: left; font-weight: bold;">Trámites Legales</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 50.000</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 600.000</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 628.800</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 653.952</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 677.494</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 697.819</td>
+                        </tr>
+                        <!-- Row 6 -->
+                        <tr style="background: #a5d6a7; color: #1a1a1a;">
+                            <td style="border: 1px solid #fff; padding: 8px; text-align: left; font-weight: bold;">Mantenimiento de Equipos</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 100.000</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 1.200.000</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 1.257.600</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 1.307.904</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 1.354.989</td>
+                            <td style="border: 1px solid #fff; padding: 8px;">$ 1.395.638</td>
+                        </tr>
+                        <!-- Row 7 -->
+                        <tr style="background: #81c784; color: #1a1a1a;">
+                            <td style="border: 1px solid #fff; padding: 8px; text-align: left; font-weight: bold; color: #555;">N/A</td>
+                            <td style="border: 1px solid #fff; padding: 8px; color: #555;">$ 0</td>
+                            <td style="border: 1px solid #fff; padding: 8px; color: #555;">$ 0</td>
+                            <td style="border: 1px solid #fff; padding: 8px; color: #555;">$ 0</td>
+                            <td style="border: 1px solid #fff; padding: 8px; color: #555;">$ 0</td>
+                            <td style="border: 1px solid #fff; padding: 8px; color: #555;">$ 0</td>
+                            <td style="border: 1px solid #fff; padding: 8px; color: #555;">$ 0</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 19. Separador Análisis de Viabilidad Financiera -->
+            <section>
+                <h2 class="sena-green" style="font-size: 1.5em; line-height: 1.3;">Análisis de viabilidad financiera</h2>
+            </section>
+
+
+            <!-- 20. Costos operacionales y precio -->
+            <section>
+                <h2 class="sena-green" style="font-size: 1.5em; text-transform: none; margin-top: 40px; margin-bottom: 20px; text-align: center;">Costos operacionales y precio</h2>
+                
+                <h3 style="font-size: 0.6em; color: #1a1a1a; font-weight: bold; text-align: right; margin-right: 5%; margin-bottom: 10px;">Presupuesto de Costos Operacionales</h3>
+                <table style="width: 95%; margin: 0 auto; border-collapse: collapse; font-size: 0.35em; text-align: center; margin-bottom: 30px;">
+                    <tr style="background: #e8f5e9; font-weight: bold; color: #1a1a1a;">
+                        <td style="border: 1px solid #999; padding: 6px;">ITEM</td>
+                        <td style="border: 1px solid #999; padding: 6px;">BIEN/SERVICIO</td>
+                        <td style="border: 1px solid #999; padding: 6px;">AÑO 1</td>
+                        <td style="border: 1px solid #999; padding: 6px;">AÑO 2</td>
+                        <td style="border: 1px solid #999; padding: 6px;">AÑO 3</td>
+                        <td style="border: 1px solid #999; padding: 6px;">AÑO 4</td>
+                        <td style="border: 1px solid #999; padding: 6px;">AÑO 5</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #999; padding: 6px;">1</td>
+                        <td style="border: 1px solid #999; padding: 6px;">Licencia Software ProvEEndo</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 86.808.000</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 93.522.078</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 99.694.535</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 105.865.627</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 111.767.636</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #999; padding: 6px;">2</td>
+                        <td style="border: 1px solid #999; padding: 6px;">Producto o servicio 2</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #999; padding: 6px;">3</td>
+                        <td style="border: 1px solid #999; padding: 6px;">Producto o servicio 3</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #999; padding: 6px;">4</td>
+                        <td style="border: 1px solid #999; padding: 6px;">Producto o servicio 4</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                    </tr>
+                </table>
+
+                <h3 style="font-size: 0.6em; color: #1a1a1a; font-weight: bold; text-align: right; margin-right: 5%; margin-bottom: 10px;">Precios Proyectados</h3>
+                <table style="width: 95%; margin: 0 auto; border-collapse: collapse; font-size: 0.35em; text-align: center;">
+                    <tr style="background: #e8f5e9; font-weight: bold; color: #1a1a1a;">
+                        <td style="border: 1px solid #999; padding: 6px;">ITEM</td>
+                        <td style="border: 1px solid #999; padding: 6px;">BIEN/SERVICIO</td>
+                        <td style="border: 1px solid #999; padding: 6px; width: 10%;">COSTO UNITARIO<br>DE PRODUCCION</td>
+                        <td style="border: 1px solid #999; padding: 6px; width: 8%;">MARGEN<br>GANANCIA</td>
+                        <td style="border: 1px solid #999; padding: 6px;">PRECIO AÑO 1</td>
+                        <td style="border: 1px solid #999; padding: 6px;">AÑO 2</td>
+                        <td style="border: 1px solid #999; padding: 6px;">AÑO 3</td>
+                        <td style="border: 1px solid #999; padding: 6px;">AÑO 4</td>
+                        <td style="border: 1px solid #999; padding: 6px;">AÑO 5</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #999; padding: 6px;">1</td>
+                        <td style="border: 1px solid #999; padding: 6px;">Licencia Software ProvEEndo</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 482.267</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f; font-weight: bold;">90%</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 916.307</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 989.611</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 1.068.780</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 1.154.283</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 1.246.625</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #999; padding: 6px;">2</td>
+                        <td style="border: 1px solid #999; padding: 6px;">Producto o servicio 2</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">50%</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #999; padding: 6px;">3</td>
+                        <td style="border: 1px solid #999; padding: 6px;">Producto o servicio 3</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">50%</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #999; padding: 6px;">4</td>
+                        <td style="border: 1px solid #999; padding: 6px;">Producto o servicio 4</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">50%</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                        <td style="border: 1px solid #999; padding: 6px; color: #d32f2f;">$ 0</td>
+                    </tr>
+                </table>
+            </section>
+
+
+            <!-- 21. Estados financieros -->
+            <section>
+                <style>
+                    .fin-container {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        width: 95%;
+                        margin: 0 auto;
+                        padding-bottom: 20px;
+                        z-index: 1;
+                    }
+                    .fin-box {
+                        width: 28%;
+                        margin: 0 2.5%;
+                        text-align: center;
+                        position: relative;
+                    }
+                    .fin-data {
+                        border: 1px solid #39A900;
+                        padding: 15px;
+                        margin-bottom: 30px;
+                        position: relative;
+                        background: #fff;
+                    }
+                    /* Vertical line dropping down from the green box */
+                    .fin-data::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -30px;
+                        left: 50%;
+                        border-left: 1px solid #333;
+                        height: 30px;
+                        z-index: -1;
+                    }
+                    .fin-row {
+                        background: #39A900;
+                        color: white;
+                        font-weight: bold;
+                        padding: 8px 10px;
+                        margin-bottom: 2px;
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 0.42em;
+                    }
+                    .fin-title {
+                        background: #e0e0e0;
+                        border: 2px solid #999;
+                        padding: 12px;
+                        font-weight: bold;
+                        font-size: 0.6em;
+                        color: #1a1a1a;
+                        position: relative;
+                        box-shadow: 3px 3px 0px rgba(0,0,0,0.1);
+                        z-index: 2;
+                    }
+                    /* Horizontal line connecting all boxes */
+                    .fin-connector {
+                        position: absolute;
+                        bottom: 45px;
+                        left: 17%;
+                        width: 66%;
+                        border-top: 1px solid #333;
+                        z-index: 0;
+                    }
+                </style>
+                
+                <h2 class="sena-green" style="font-size: 1.5em; text-transform: none; margin-top: 40px; margin-bottom: 40px; text-align: center;">Estados financieros</h2>
+                
+                <div class="fin-container">
+                    <div class="fin-connector"></div>
+                    
+                    <div class="fin-box">
+                        <div class="fin-data">
+                            <div class="fin-row"><span>Año 1 $</span> <span>168.600.427</span></div>
+                            <div class="fin-row"><span>Año 2 $</span> <span>187.186.938</span></div>
+                            <div class="fin-row"><span>Año 3 $</span> <span>207.215.940</span></div>
+                            <div class="fin-row"><span>Año 4 $</span> <span>229.388.046</span></div>
+                            <div class="fin-row"><span>Año 5 $</span> <span>253.932.567</span></div>
+                        </div>
+                        <div class="fin-title">Ingresos de ventas</div>
+                    </div>
+                    
+                    <div class="fin-box">
+                        <div class="fin-data">
+                            <div class="fin-row"><span>Año 1 $</span> <span>152.671.248</span></div>
+                            <div class="fin-row"><span>Año 2 $</span> <span>162.546.762</span></div>
+                            <div class="fin-row"><span>Año 3 $</span> <span>171.480.206</span></div>
+                            <div class="fin-row"><span>Año 4 $</span> <span>180.235.582</span></div>
+                            <div class="fin-row"><span>Año 5 $</span> <span>188.368.689</span></div>
+                        </div>
+                        <div class="fin-title">Egresos</div>
+                    </div>
+                    
+                    <div class="fin-box">
+                        <div class="fin-data">
+                            <div class="fin-row"><span>Año 1 $</span> <span>15.929.179</span></div>
+                            <div class="fin-row"><span>Año 2 $</span> <span>18.480.132</span></div>
+                            <div class="fin-row"><span>Año 3 $</span> <span>26.801.800</span></div>
+                            <div class="fin-row"><span>Año 4 $</span> <span>36.864.348</span></div>
+                            <div class="fin-row"><span>Año 5 $</span> <span>53.050.408</span></div>
+                        </div>
+                        <div class="fin-title">Utilidad neta</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 22. Análisis de la viabilidad financiera (Infografía) -->
+            <section>
+                <style>
+                    .viab-container {
+                        width: 95%;
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: space-between;
+                        align-content: flex-end;
+                        align-items: flex-end;
+                        height: 400px;
+                        margin-top: 10px;
+                    }
+                    /* Pie chart container */
+                    .fin-pie-container {
+                        border: 1px solid #ccc;
+                        padding: 15px 15px 25px 15px;
+                        width: 30%;
+                        min-height: 280px;
+                        box-sizing: border-box;
+                        background: #fdfdfd;
+                        align-self: flex-end;
+                        margin-bottom: 0px;
+                    }
+                    .fin-pie-title {
+                        font-size: 0.55em;
+                        color: #333;
+                        margin-bottom: 20px;
+                        text-align: center;
+                    }
+                    .fin-pie {
+                        width: 130px; height: 130px;
+                        background: #00b050; /* 100% Solid Green for Convocatoria */
+                        border-radius: 50%;
+                        margin: 0 auto 20px auto;
+                        position: relative;
+                        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+                    }
+                    .fin-pie-label {
+                        position: absolute;
+                        top: 50%; left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: white; font-weight: bold;
+                        font-size: 0.6em;
+                    }
+                    .fin-legend {
+                        font-size: 0.35em;
+                        line-height: 1.6;
+                        text-align: left;
+                        padding-left: 5px;
+                    }
+                    .fin-legend span.box {
+                        display: inline-block;
+                        width: 12px; height: 12px;
+                        margin-right: 6px;
+                        vertical-align: middle;
+                    }
+                    
+                    /* Staircase container */
+                    .staircase-container {
+                        width: 68%;
+                        height: 90%;
+                        display: flex;
+                        align-items: flex-end;
+                        position: relative;
+                    }
+                    .stair {
+                        flex: 1;
+                        background: #00b050;
+                        border-left: 1px solid rgba(255,255,255,0.3);
+                        position: relative;
+                        box-shadow: 2px -2px 5px rgba(0,0,0,0.1);
+                    }
+                    .stair-1 { height: 15%; }
+                    .stair-2 { height: 35%; }
+                    .stair-3 { height: 55%; }
+                    .stair-4 { height: 75%; }
+                    .stair-5 { height: 95%; }
+                    
+                    .stair-label {
+                        position: absolute;
+                        bottom: 100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 150px;
+                        text-align: center;
+                        padding-bottom: 5px;
+                        font-size: 0.4em;
+                        font-weight: bold;
+                        color: #1a1a1a;
+                        line-height: 1.2;
+                    }
+                    .stair-value {
+                        display: block;
+                        font-size: 0.9em;
+                        color: #333;
+                        margin-top: 4px;
+                    }
+                    /* Add some outline/border effect for the 4th box specifically as in the image */
+                    .val-box {
+                        border: 1px solid #777;
+                        padding: 8px;
+                        background: #fff;
+                        width: 160px;
+                        margin-left: -80px; /* center it */
+                        left: 50%;
+                        position: absolute;
+                        bottom: 100%;
+                        margin-bottom: 5px;
+                        text-align: center;
+                        line-height: 1.2;
+                    }
+                </style>
+
+                <h2 class="sena-green" style="font-size: 1.4em; text-transform: none; margin-top: 5px; text-align: center; line-height: 1.2;">Análisis de la viabilidad financiera</h2>
+                
+                <div class="viab-container">
+                    
+                    <!-- Pie Chart Side -->
+                    <div class="fin-pie-container">
+                        <div class="fin-pie-title">Financiación del Proyecto</div>
+                        <div class="fin-pie">
+                            <div class="fin-pie-label">100%</div>
+                        </div>
+                        <div class="fin-legend">
+                            <div style="color: #999;"><span class="box" style="background: #ccc;"></span>Capital Propio (0%)</div>
+                            <div style="color: #999;"><span class="box" style="background: #ccc;"></span>Capital de socios (0%)</div>
+                            <div style="color: #999;"><span class="box" style="background: #ccc;"></span>Préstamo bancario (0%)</div>
+                            <div style="color: #1a1a1a; font-weight: bold;"><span class="box" style="background: #00b050;"></span>Otros (Convocatoria SENA)</div>
+                        </div>
+                    </div>
+
+                    <!-- Staircase Side -->
+                    <div class="staircase-container">
+                        <div class="stair stair-1">
+                            <div class="stair-label">
+                                Año de recuperación<br>de la inversión
+                                <span class="stair-value">Año 2</span>
+                            </div>
+                        </div>
+                        <div class="stair stair-2">
+                            <div class="stair-label">
+                                Relación beneficio<br>costo
+                                <span class="stair-value">1.12</span>
+                            </div>
+                        </div>
+                        <div class="stair stair-3">
+                            <div class="stair-label">
+                                Tasa interna de<br>retorno
+                                <span class="stair-value">51.5%</span>
+                            </div>
+                        </div>
+                        <div class="stair stair-4">
+                            <div class="val-box">
+                                <span style="font-size: 0.4em; font-weight: bold; color: #1a1a1a; display: block;">Valor actual de la<br>inversión (VPN)</span>
+                                <span style="display: block; font-size: 0.4em; font-weight: bold; color: #333; margin-top: 5px;">$ 40.793.048</span>
+                            </div>
+                        </div>
+                        <div class="stair stair-5">
+                            <div class="stair-label">
+                                Costo de capital
+                                <span class="stair-value">20%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 23. Separador Producto Mínimo Viable -->
+            <section>
+                <h2 class="sena-green" style="font-size: 1.5em; line-height: 1.3;">Producto mínimo viable</h2>
+            </section>
+
+            <!-- 24. Aspectos clave del PMV -->
+            <section>
+                <style>
+                    .mvp-container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-content: space-between;
+                        height: 380px;
+                        width: 88%;
+                        margin: 0 auto;
+                        position: relative;
+                        margin-top: 30px;
+                    }
+                    .mvp-box {
+                        border: 3px solid #6c9c6d;
+                        border-radius: 15px;
+                        padding: 15px 20px;
+                        background: white;
+                        width: 38%;
+                        font-weight: bold;
+                        font-size: 0.45em;
+                        color: #1a1a1a;
+                        box-shadow: 3px 3px 0px rgba(0,0,0,0.05);
+                        text-align: left;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        height: 140px;
+                        z-index: 2;
+                        font-family: 'Inter', sans-serif;
+                    }
+                    .mvp-box-title {
+                        color: #39A900;
+                        font-size: 1.1em;
+                        margin-bottom: 8px;
+                        line-height: 1.2;
+                        border-bottom: 1px solid #eee;
+                        padding-bottom: 5px;
+                        width: 100%;
+                    }
+                    .mvp-box-text {
+                        font-weight: normal;
+                        font-size: 0.95em;
+                        color: #444;
+                        line-height: 1.4;
+                    }
+                    .mvp-center {
+                        position: absolute;
+                        top: 50%; left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 5em;
+                        color: #81c784;
+                        z-index: 1;
+                        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.1));
+                    }
+                </style>
+                
+                <h2 class="sena-green" style="font-size: 1.3em; text-transform: none; margin-top: 10px; text-align: center; line-height: 1.2;">Aspectos clave del<br>producto mínimo viable</h2>
+                
+                <div class="mvp-container">
+                    
+                    <!-- Center Icon -->
+                    <div class="mvp-center">
+                        🔀
+                    </div>
+
+                    <!-- Top Left -->
+                    <div class="mvp-box" style="align-self: flex-start;">
+                        <div class="mvp-box-title">¿Qué quiero lograr con mi PMV?</div>
+                        <div class="mvp-box-text">Validar el modelo de negocio B2B conectando digitalmente a distribuidores y tenderos de Neiva, y confirmar la tracción real del mercado.</div>
+                    </div>
+
+                    <!-- Top Right -->
+                    <div class="mvp-box" style="align-self: flex-start;">
+                        <div class="mvp-box-title">¿Qué competencias se alinean?</div>
+                        <div class="mvp-box-text">Competencias <b>ADSO</b>: Levantamiento de requisitos, modelado de bases de datos, desarrollo Frontend/Backend y despliegue en la nube.</div>
+                    </div>
+
+                    <!-- Bottom Left -->
+                    <div class="mvp-box" style="align-self: flex-end;">
+                        <div class="mvp-box-title">Características diferenciadoras</div>
+                        <div class="mvp-box-text">Plataforma 100% web (sin instalar apps), enfoque cultural regional (estilo "Opita") e interfaz ultra simplificada para el tendero.</div>
+                    </div>
+
+                    <!-- Bottom Right -->
+                    <div class="mvp-box" style="align-self: flex-end;">
+                        <div class="mvp-box-title">Importancia funcional</div>
+                        <div class="mvp-box-text">Demuestra la viabilidad técnica del software, permite recopilar feedback de usuarios tempranos e iniciar la facturación del Año 1.</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 25. Proceso y resultados -->
+            <section>
+                <style>
+                    .cycle-container {
+                        position: relative;
+                        width: 80%;
+                        height: 380px;
+                        margin: 20px auto 0 auto;
+                        font-family: 'Inter', sans-serif;
+                    }
+                    /* The background orange circle */
+                    .cycle-ring {
+                        position: absolute;
+                        top: 15%; left: 20%;
+                        width: 60%; height: 60%;
+                        border: 20px solid rgba(255, 204, 153, 0.4);
+                        border-radius: 50%;
+                        z-index: 0;
+                        box-sizing: border-box;
+                    }
+                    /* Add a subtle arrow head using a triangle */
+                    .cycle-ring::after {
+                        content: '';
+                        position: absolute;
+                        top: -30px; left: 50%;
+                        border-width: 20px;
+                        border-style: solid;
+                        border-color: transparent transparent transparent rgba(255, 204, 153, 0.8);
+                        transform: rotate(-45deg);
+                    }
+                    .cycle-box {
+                        position: absolute;
+                        border-radius: 12px;
+                        padding: 12px;
+                        color: white;
+                        text-align: center;
+                        z-index: 1;
+                        box-shadow: 2px 4px 6px rgba(0,0,0,0.15);
+                        width: 28%;
+                        font-size: 0.45em;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        line-height: 1.3;
+                    }
+                    .cycle-title {
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                        font-size: 1.1em;
+                        border-bottom: 1px solid rgba(255,255,255,0.4);
+                        padding-bottom: 3px;
+                    }
+                    .cycle-text {
+                        font-weight: normal;
+                        font-size: 0.9em;
+                    }
+                    
+                    /* Positions and Colors */
+                    .box-top {
+                        top: 0; left: 50%;
+                        transform: translateX(-50%);
+                        background: #f39c12; /* Orange */
+                    }
+                    .box-right {
+                        top: 38%; right: 0;
+                        background: #8bc34a; /* Lime Green */
+                    }
+                    .box-bot-right {
+                        bottom: 0; right: 15%;
+                        background: #2ecc71; /* Green */
+                    }
+                    .box-bot-left {
+                        bottom: 0; left: 15%;
+                        background: #1abc9c; /* Teal */
+                    }
+                    .box-left {
+                        top: 38%; left: 0;
+                        background: #5dade2; /* Blue */
+                    }
+                </style>
+                
+                <h2 class="sena-green" style="font-size: 1.5em; text-transform: none; margin-top: 10px; text-align: center; line-height: 1.2;">Proceso y resultados</h2>
+                
+                <div class="cycle-container">
+                    <div class="cycle-ring"></div>
+                    
+                    <div class="cycle-box box-top">
+                        <div class="cycle-title">Avance 1</div>
+                        <div class="cycle-text">Levantamiento de requisitos, modelado de BD (SQL) y diseño de la arquitectura UI/UX.</div>
+                    </div>
+                    
+                    <div class="cycle-box box-right">
+                        <div class="cycle-title">Avance 2</div>
+                        <div class="cycle-text">Desarrollo del Backend y Frontend. Conexión exitosa de los módulos básicos.</div>
+                    </div>
+                    
+                    <div class="cycle-box box-bot-right">
+                        <div class="cycle-title">Avance 3</div>
+                        <div class="cycle-text">Despliegue en la nube, pruebas de rendimiento y depuración del sistema B2B.</div>
+                    </div>
+                    
+                    <div class="cycle-box box-bot-left">
+                        <div class="cycle-title">PMV Final</div>
+                        <div class="cycle-text">Plataforma 100% funcional operando con usuarios de prueba y sin errores.</div>
+                    </div>
+                    
+                    <div class="cycle-box box-left">
+                        <div class="cycle-title">Fase Comercialización</div>
+                        <div class="cycle-text">Estrategia de marketing regional y cierre de alianzas con primeros distribuidores.</div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- 26. Matriz DOFA del PMV -->
+            <section>
+                <h2 class="sena-green" style="font-size: 1.3em; text-transform: none; margin-top: 8px; text-align: center; line-height: 1.2;">Matriz DOFA del producto mínimo viable</h2>
+
+                <div style="display: flex; width: 92%; margin: 15px auto 0 auto; gap: 18px; align-items: center;">
+                    
+                    <!-- Left: DOFA Grid (2x2) -->
+                    <div style="flex: 1; position: relative; height: 340px;">
+                        
+                        <!-- Green cross lines -->
+                        <div style="position: absolute; top: 50%; left: 0; right: 0; height: 4px; background: #39A900; z-index: 2;"></div>
+                        <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 4px; background: #39A900; z-index: 2;"></div>
+                        <!-- Outer border -->
+                        <div style="position: absolute; inset: 0; border: 2px solid #ccc; z-index: 1;"></div>
+
+                        <!-- Top Left: Debilidades -->
+                        <div style="position: absolute; top: 0; left: 0; width: calc(50% - 2px); height: calc(50% - 2px); padding: 10px 12px; font-size: 0.32em; box-sizing: border-box;">
+                            <div style="font-weight: bold; color: #1a1a1a; margin-bottom: 6px; font-size: 1.2em; text-align: center;">Debilidades del PMV</div>
+                            <ul style="margin: 0; padding-left: 14px; color: #444; line-height: 1.6;">
+                                <li>Alcance funcional limitado a módulos básicos.</li>
+                                <li>Dependencia de conectividad a Internet estable.</li>
+                                <li>Sin aplicación móvil nativa en esta versión.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Top Right: Oportunidades -->
+                        <div style="position: absolute; top: 0; right: 0; width: calc(50% - 2px); height: calc(50% - 2px); padding: 10px 12px; font-size: 0.32em; box-sizing: border-box;">
+                            <div style="font-weight: bold; color: #1a1a1a; margin-bottom: 6px; font-size: 1.2em; text-align: center;">Oportunidades de mejora</div>
+                            <ul style="margin: 0; padding-left: 14px; color: #444; line-height: 1.6;">
+                                <li>Integración con facturación electrónica (DIAN).</li>
+                                <li>Expansión del MVP a otros municipios del Huila.</li>
+                                <li>Incorporar app móvil en versión 2.0.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Bottom Left: Fortalezas -->
+                        <div style="position: absolute; bottom: 0; left: 0; width: calc(50% - 2px); height: calc(50% - 2px); padding: 10px 12px; font-size: 0.32em; box-sizing: border-box;">
+                            <div style="font-weight: bold; color: #1a1a1a; margin-bottom: 6px; font-size: 1.2em; text-align: center;">Fortalezas del PMV</div>
+                            <ul style="margin: 0; padding-left: 14px; color: #444; line-height: 1.6;">
+                                <li>Plataforma 100% web, sin instalación requerida.</li>
+                                <li>Interfaz ultra simplificada para el tendero.</li>
+                                <li>Bajo costo operativo (infraestructura cloud).</li>
+                            </ul>
+                        </div>
+
+                        <!-- Bottom Right: Amenazas -->
+                        <div style="position: absolute; bottom: 0; right: 0; width: calc(50% - 2px); height: calc(50% - 2px); padding: 10px 12px; font-size: 0.32em; box-sizing: border-box;">
+                            <div style="font-weight: bold; color: #1a1a1a; margin-bottom: 6px; font-size: 1.2em; text-align: center;">Amenazas del PMV</div>
+                            <ul style="margin: 0; padding-left: 14px; color: #444; line-height: 1.6;">
+                                <li>Competencia de plataformas B2B ya establecidas.</li>
+                                <li>Resistencia al cambio tecnológico del tendero.</li>
+                                <li>Riesgo de copia del concepto sin protección IP.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Right: Decorative circle image -->
+                    <div style="width: 200px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 180px; height: 180px; border-radius: 50%; border: 5px solid #39A900; background: #e8f5e9; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(57,169,0,0.2); overflow: hidden;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 4em; line-height: 1;">💻</div>
+                                <div style="font-size: 0.35em; font-weight: bold; color: #39A900; margin-top: 5px;">ProvEEndo PMV</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 27. Funcionalidad del PMV -->
+            <section>
+                <h2 class="sena-green" style="font-size: 1.4em; text-transform: none; margin-top: 6px; text-align: center; line-height: 1.1;">Funcionalidad del PMV</h2>
+
+                <!-- Subtitle -->
+                <p style="font-size: 0.42em; color: #555 !important; text-align: center; margin: 6px 0 16px 0; font-family: 'Inter', sans-serif;">
+                    Plataforma web <strong style="color: #39A900 !important;">B2B</strong> desarrollada con competencias <strong style="color: #39A900 !important;">ADSO · SENA</strong> — conectando distribuidores y tenderos de Neiva
+                </p>
+
+                <!-- Module Cards Grid -->
+                <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; width: 92%; margin: 0 auto;">
+                    
+                    <div style="background: linear-gradient(135deg, #39A900, #5cb800); border-radius: 12px; padding: 14px 8px; text-align: center; color: white !important; box-shadow: 0 4px 10px rgba(57,169,0,0.3);">
+                        <div style="font-size: 2.2em; margin-bottom: 6px;">🔐</div>
+                        <div style="font-size: 0.35em; font-weight: bold; line-height: 1.3; color: white !important;">Registro y autenticación<br>de usuarios</div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #2ecc71, #27ae60); border-radius: 12px; padding: 14px 8px; text-align: center; color: white !important; box-shadow: 0 4px 10px rgba(46,204,113,0.3);">
+                        <div style="font-size: 2.2em; margin-bottom: 6px;">📦</div>
+                        <div style="font-size: 0.35em; font-weight: bold; line-height: 1.3; color: white !important;">Catálogo con precios<br>y stock en tiempo real</div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #f39c12, #e67e22); border-radius: 12px; padding: 14px 8px; text-align: center; color: white !important; box-shadow: 0 4px 10px rgba(243,156,18,0.3);">
+                        <div style="font-size: 2.2em; margin-bottom: 6px;">🛒</div>
+                        <div style="font-size: 0.35em; font-weight: bold; line-height: 1.3; color: white !important;">Carrito de compras<br>y generación de pedidos</div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #3498db, #2980b9); border-radius: 12px; padding: 14px 8px; text-align: center; color: white !important; box-shadow: 0 4px 10px rgba(52,152,219,0.3);">
+                        <div style="font-size: 2.2em; margin-bottom: 6px;">📋</div>
+                        <div style="font-size: 0.35em; font-weight: bold; line-height: 1.3; color: white !important;">Panel de gestión<br>de órdenes</div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #9b59b6, #8e44ad); border-radius: 12px; padding: 14px 8px; text-align: center; color: white !important; box-shadow: 0 4px 10px rgba(155,89,182,0.3);">
+                        <div style="font-size: 2.2em; margin-bottom: 6px;">📊</div>
+                        <div style="font-size: 0.35em; font-weight: bold; line-height: 1.3; color: white !important;">Historial y reportes<br>de transacciones</div>
+                    </div>
+                </div>
+
+                <!-- Bottom call to action banner -->
+                <div style="width: 92%; margin: 16px auto 0 auto; background: #f9fff4; border: 2px solid #39A900; border-radius: 10px; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; font-family: 'Inter', sans-serif;">
+                    <div style="font-size: 0.4em; color: #222 !important; line-height: 1.5;">
+                        <span style="font-size: 1.4em;">🚀</span>
+                        <strong style="color: #39A900 !important;"> ProvEEndo</strong> ya está operativo y listo para iniciar la fase de comercialización con los primeros distribuidores de Neiva.
+                    </div>
+                    <div style="text-align: right; flex-shrink: 0; margin-left: 20px;">
+                        <div style="font-size: 0.38em; color: #39A900 !important; font-weight: bold; line-height: 1.4;">100% Web · Sin instalación · B2B</div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="sena-green" style="font-size: 1.5em; text-transform: uppercase; margin-top: 8px; text-align: center; letter-spacing: 2px;">Conclusiones</h2>
+
+                <!-- 3 conclusion cards -->
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; width: 90%; margin: 18px auto 0 auto; font-family: 'Inter', sans-serif;">
+                    
+                    <div style="background: linear-gradient(135deg, #39A900, #5cb800); border-radius: 14px; padding: 20px 14px; text-align: center; box-shadow: 0 6px 16px rgba(57,169,0,0.25);">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🏪</div>
+                        <div style="font-size: 0.38em; color: white !important; font-weight: bold; line-height: 1.6;">
+                            ProvEEndo resuelve un problema tecnológico latente en el comercio tradicional de Neiva.
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #27ae60, #1e8449); border-radius: 14px; padding: 20px 14px; text-align: center; box-shadow: 0 6px 16px rgba(39,174,96,0.25);">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">📈</div>
+                        <div style="font-size: 0.38em; color: white !important; font-weight: bold; line-height: 1.6;">
+                            El modelo de negocio es altamente escalable y financieramente sólido desde el Año 2 (TIR 51.5%).
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #2ecc71, #39A900); border-radius: 14px; padding: 20px 14px; text-align: center; box-shadow: 0 6px 16px rgba(46,204,113,0.25);">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🚀</div>
+                        <div style="font-size: 0.38em; color: white !important; font-weight: bold; line-height: 1.6;">
+                            El Producto Mínimo Viable (PMV) está listo y operativo para iniciar la comercialización.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thank you banner -->
+                <div style="margin-top: 28px; text-align: center;">
+                    <div style="font-size: 1.8em; font-weight: 900; color: #f39c12 !important; font-family: 'Montserrat', 'Inter', sans-serif; letter-spacing: 1px; text-shadow: 1px 2px 4px rgba(0,0,0,0.1);">
+                        ¡Muchas Gracias!
+                    </div>
+                    <div style="font-size: 0.4em; color: #555 !important; margin-top: 10px; font-family: 'Inter', sans-serif; letter-spacing: 0.5px;">
+                        Juan Sebastián Trujillo &nbsp;·&nbsp; Tecnólogo en ADSO &nbsp;·&nbsp; SENA Neiva
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            transition: 'slide'
+        });
+    </script>
+</body>
+</html>
